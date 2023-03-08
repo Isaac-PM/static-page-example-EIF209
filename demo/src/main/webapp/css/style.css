@@ -1,0 +1,86 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image:url('../images/background_1.jpg');
+  background-size: cover;
+  background-position: initial;
+}
+
+:root {
+  --main: #517689;
+  --complementary_dark: #9BB4C0;
+  --complementary_light: #BED1DA;
+  --accent: #F3DE8A;
+  --black: #000000ff;
+  --white: #ffffffff;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
+  padding: 10px;
+}
+
+.paper-header {
+  background-color: var(--main);
+}
+
+.paper-solution {
+  background-color: var(--complementary_light);
+}
+
+.paper-solution-title, .paper-solution-content {
+  vertical-align: top;
+  display: flex;
+  align-items: center;
+}
+
+.centered {
+  vertical-align: top;
+  display: flex;
+  align-items: center;
+}
+
+.paper-header-title {
+  grid-column: 1 / 4;
+}
+
+.paper-header-content {
+  grid-column: 4 / 5;
+}
+
+.paper-header-title-data {
+  text-align: center;
+}
+
+.paper-header-title-authors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 5px;
+  padding: 5px;
+}
+
+.author {
+  display: inline-block;
+  text-align: center;
+}
+
+.author-photo {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.paper-solution-title {
+  grid-column: 1 / 2;
+}
+
+.paper-solution-content {
+  grid-column: 2 / 5;
+}
+
+.students-ul {
+  list-style-image: url('../images/students-ul.png');
+}
+
